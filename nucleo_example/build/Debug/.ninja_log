@@ -1,0 +1,14 @@
+# ninja log v6
+58	240	8073857000096034	CMakeFiles/nucleo_example.dir/startup_stm32f103xb.s.obj	3b6f9d9b6fe56d6a
+31	264	8073856999813688	CMakeFiles/nucleo_example.dir/Core/Src/sysmem.c.obj	4d6202929a790300
+4	286	8073856999562167	CMakeFiles/nucleo_example.dir/Core/Src/main.c.obj	4f8790542567798d
+17	288	8073856999693255	CMakeFiles/nucleo_example.dir/Core/Src/stm32f1xx_it.c.obj	7c2e7ecf3e19f2fd
+44	329	8073856999962188	CMakeFiles/nucleo_example.dir/Core/Src/syscalls.c.obj	ff6efcb54725496f
+75	350	8073857000271234	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj	2c8cc7d265444246
+350	560	8073857003000079	nucleo_example.elf	7afdf64b72265fd
+5	238	8073893272608283	CMakeFiles/nucleo_example.dir/Core/Src/main.c.obj	4f8790542567798d
+238	450	8073893274932381	nucleo_example.elf	7afdf64b72265fd
+5	244	8073901098423960	CMakeFiles/nucleo_example.dir/Core/Src/main.c.obj	4f8790542567798d
+244	454	8073901100782338	nucleo_example.elf	7afdf64b72265fd
+5	234	8073901431921072	CMakeFiles/nucleo_example.dir/Core/Src/main.c.obj	4f8790542567798d
+235	432	8073901434328844	nucleo_example.elf	7afdf64b72265fd

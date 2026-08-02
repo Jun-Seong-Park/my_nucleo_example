@@ -1,0 +1,34 @@
+{
+    // Cortex-Debug 1.12.1 + ST-LINK_gdbserver (STM32CubeIDE 번들) 조합.
+    // 속성 이름은 확장의 debug_attributes.md 기준.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug (ST-LINK)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "stlink",
+            "interface": "swd",
+            "device": "STM32F103RB",
+
+            "cwd": "${workspaceFolder}/nucleo_example",
+            "executable": "${workspaceFolder}/nucleo_example/build/Debug/nucleo_example.elf",
+
+            // F5 를 누르면 먼저 빌드한다 (tasks.json 의 "build")
+            "preLaunchTask": "build",
+
+            // main() 진입 시점에서 자동으로 멈춘다
+            "runToEntryPoint": "main",
+
+            // 레지스터를 이름·비트 단위로 보여주는 정의 파일.
+            // 이게 있어야 GPIOA->CRL, RCC->APB2ENR 을 비트별로 관측할 수 있다.
+            "svdFile": "C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.productdb.debug_2.2.500.202605201745/resources/cmsis/STMicroelectronics_CMSIS_SVD/STM32F103.svd",
+
+            // 툴 경로 — 전부 STM32CubeIDE 에 번들된 것을 그대로 쓴다
+            "stlinkPath": "C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.win32_2.2.500.202604010938/tools/bin/ST-LINK_gdbserver.exe",
+            "stm32cubeprogrammer": "C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_2.2.500.202603051304/tools/bin",
+            "armToolchainPath": "C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin",
+            "gdbPath": "C:/ST/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740/tools/bin/arm-none-eabi-gdb.exe"
+        }
+    ]
+}

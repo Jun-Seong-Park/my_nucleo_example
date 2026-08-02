@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800" font-family="'Courier New', Courier, monospace">
+
+  <!-- 흰 배경 -->
+  <rect width="1400" height="800" fill="white"/>
+
+  <!-- 타이틀 -->
+  <text x="700" y="38" text-anchor="middle" font-size="26" font-weight="bold" fill="#111">NUCLEO-F103RB : 외부 LED 배선 (PA6)</text>
+
+  <!-- ============ GND 배선 (위쪽으로 우회) ============ -->
+  <polyline points="360,360 440,360 440,95 1075,95 1075,180"
+            fill="none" stroke="#333333" stroke-width="4"/>
+  <text x="740" y="85" text-anchor="middle" font-size="15" fill="#333333">GND (검정 점퍼선)</text>
+
+  <!-- ============ PA_6 배선 ============ -->
+  <polyline points="360,280 470,280 470,180 690,180"
+            fill="none" stroke="#cc0000" stroke-width="4"/>
+  <text x="500" y="205" font-size="15" fill="#cc0000">빨강 점퍼선</text>
+
+  <!-- ============ Nucleo 보드 ============ -->
+  <rect x="60" y="190" width="300" height="300" fill="#cce5ff" stroke="#004085" stroke-width="3" rx="6"/>
+  <text x="210" y="225" text-anchor="middle" font-size="19" font-weight="bold" fill="#004085">NUCLEO-F103RB</text>
+  <text x="210" y="248" text-anchor="middle" font-size="14" fill="#004085">모포 커넥터 CN10</text>
+
+  <!-- PA_6 핀 -->
+  <rect x="250" y="265" width="110" height="30" fill="#ffffff" stroke="#cc0000" stroke-width="2.5"/>
+  <text x="305" y="286" text-anchor="middle" font-size="17" font-weight="bold" fill="#cc0000">PA_6</text>
+  <circle cx="360" cy="280" r="7" fill="#cc0000"/>
+
+  <!-- GND 핀 -->
+  <rect x="250" y="345" width="110" height="30" fill="#ffffff" stroke="#333333" stroke-width="2.5"/>
+  <text x="305" y="366" text-anchor="middle" font-size="17" font-weight="bold" fill="#333333">GND</text>
+  <circle cx="360" cy="360" r="7" fill="#333333"/>
+
+  <text x="210" y="420" text-anchor="middle" font-size="14" fill="#004085">핀 이름은 커넥터 옆에</text>
+  <text x="210" y="440" text-anchor="middle" font-size="14" fill="#004085">보드에 인쇄되어 있음</text>
+  <text x="210" y="468" text-anchor="middle" font-size="13" fill="#666666">(USB 는 위쪽 CN1 에)</text>
+
+  <!-- ============ 브레드보드 ============ -->
+  <rect x="540" y="130" width="680" height="520" fill="#f5f5f0" stroke="#999999" stroke-width="2" rx="4"/>
+  <!-- 중앙 홈 -->
+  <rect x="540" y="385" width="680" height="30" fill="#e0e0d8" stroke="#bbbbbb" stroke-width="1"/>
+
+  <!-- 열 번호 -->
+  <text x="580"  y="155" text-anchor="middle" font-size="13" fill="#888">1</text>
+  <text x="635"  y="155" text-anchor="middle" font-size="13" fill="#888">2</text>
+  <text x="690"  y="155" text-anchor="middle" font-size="13" font-weight="bold" fill="#cc0000">3</text>
+  <text x="745"  y="155" text-anchor="middle" font-size="13" fill="#888">4</text>
+  <text x="800"  y="155" text-anchor="middle" font-size="13" fill="#888">5</text>
+  <text x="855"  y="155" text-anchor="middle" font-size="13" fill="#888">6</text>
+  <text x="910"  y="155" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a7a30">7</text>
+  <text x="965"  y="155" text-anchor="middle" font-size="13" fill="#888">8</text>
+  <text x="1020" y="155" text-anchor="middle" font-size="13" fill="#888">9</text>
+  <text x="1075" y="155" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">10</text>
+  <text x="1130" y="155" text-anchor="middle" font-size="13" fill="#888">11</text>
+  <text x="1185" y="155" text-anchor="middle" font-size="13" fill="#888">12</text>
+
+  <!-- 행 문자 -->
+  <text x="558" y="186" text-anchor="middle" font-size="13" fill="#888">A</text>
+  <text x="558" y="231" text-anchor="middle" font-size="13" fill="#888">B</text>
+  <text x="558" y="276" text-anchor="middle" font-size="13" fill="#888">C</text>
+  <text x="558" y="321" text-anchor="middle" font-size="13" fill="#888">D</text>
+  <text x="558" y="366" text-anchor="middle" font-size="13" fill="#888">E</text>
+  <text x="558" y="446" text-anchor="middle" font-size="13" fill="#888">F</text>
+  <text x="558" y="491" text-anchor="middle" font-size="13" fill="#888">G</text>
+  <text x="558" y="536" text-anchor="middle" font-size="13" fill="#888">H</text>
+  <text x="558" y="581" text-anchor="middle" font-size="13" fill="#888">I</text>
+  <text x="558" y="626" text-anchor="middle" font-size="13" fill="#888">J</text>
+
+  <!-- 구멍 격자 : A~E -->
+  <g fill="#ffffff" stroke="#bbbbbb" stroke-width="1.2">
+    <circle cx="580" cy="180" r="6"/><circle cx="635" cy="180" r="6"/><circle cx="690" cy="180" r="6"/><circle cx="745" cy="180" r="6"/><circle cx="800" cy="180" r="6"/><circle cx="855" cy="180" r="6"/><circle cx="910" cy="180" r="6"/><circle cx="965" cy="180" r="6"/><circle cx="1020" cy="180" r="6"/><circle cx="1075" cy="180" r="6"/><circle cx="1130" cy="180" r="6"/><circle cx="1185" cy="180" r="6"/>
+    <circle cx="580" cy="225" r="6"/><circle cx="635" cy="225" r="6"/><circle cx="690" cy="225" r="6"/><circle cx="745" cy="225" r="6"/><circle cx="800" cy="225" r="6"/><circle cx="855" cy="225" r="6"/><circle cx="910" cy="225" r="6"/><circle cx="965" cy="225" r="6"/><circle cx="1020" cy="225" r="6"/><circle cx="1075" cy="225" r="6"/><circle cx="1130" cy="225" r="6"/><circle cx="1185" cy="225" r="6"/>
+    <circle cx="580" cy="270" r="6"/><circle cx="635" cy="270" r="6"/><circle cx="690" cy="270" r="6"/><circle cx="745" cy="270" r="6"/><circle cx="800" cy="270" r="6"/><circle cx="855" cy="270" r="6"/><circle cx="910" cy="270" r="6"/><circle cx="965" cy="270" r="6"/><circle cx="1020" cy="270" r="6"/><circle cx="1075" cy="270" r="6"/><circle cx="1130" cy="270" r="6"/><circle cx="1185" cy="270" r="6"/>
+    <circle cx="580" cy="315" r="6"/><circle cx="635" cy="315" r="6"/><circle cx="690" cy="315" r="6"/><circle cx="745" cy="315" r="6"/><circle cx="800" cy="315" r="6"/><circle cx="855" cy="315" r="6"/><circle cx="910" cy="315" r="6"/><circle cx="965" cy="315" r="6"/><circle cx="1020" cy="315" r="6"/><circle cx="1075" cy="315" r="6"/><circle cx="1130" cy="315" r="6"/><circle cx="1185" cy="315" r="6"/>
+    <circle cx="580" cy="360" r="6"/><circle cx="635" cy="360" r="6"/><circle cx="690" cy="360" r="6"/><circle cx="745" cy="360" r="6"/><circle cx="800" cy="360" r="6"/><circle cx="855" cy="360" r="6"/><circle cx="910" cy="360" r="6"/><circle cx="965" cy="360" r="6"/><circle cx="1020" cy="360" r="6"/><circle cx="1075" cy="360" r="6"/><circle cx="1130" cy="360" r="6"/><circle cx="1185" cy="360" r="6"/>
+  </g>
+
+  <!-- 구멍 격자 : F~J (사용 안 함, 흐리게) -->
+  <g fill="#ffffff" stroke="#dddddd" stroke-width="1.2">
+    <circle cx="580" cy="440" r="6"/><circle cx="635" cy="440" r="6"/><circle cx="690" cy="440" r="6"/><circle cx="745" cy="440" r="6"/><circle cx="800" cy="440" r="6"/><circle cx="855" cy="440" r="6"/><circle cx="910" cy="440" r="6"/><circle cx="965" cy="440" r="6"/><circle cx="1020" cy="440" r="6"/><circle cx="1075" cy="440" r="6"/><circle cx="1130" cy="440" r="6"/><circle cx="1185" cy="440" r="6"/>
+    <circle cx="580" cy="485" r="6"/><circle cx="635" cy="485" r="6"/><circle cx="690" cy="485" r="6"/><circle cx="745" cy="485" r="6"/><circle cx="800" cy="485" r="6"/><circle cx="855" cy="485" r="6"/><circle cx="910" cy="485" r="6"/><circle cx="965" cy="485" r="6"/><circle cx="1020" cy="485" r="6"/><circle cx="1075" cy="485" r="6"/><circle cx="1130" cy="485" r="6"/><circle cx="1185" cy="485" r="6"/>
+    <circle cx="580" cy="530" r="6"/><circle cx="635" cy="530" r="6"/><circle cx="690" cy="530" r="6"/><circle cx="745" cy="530" r="6"/><circle cx="800" cy="530" r="6"/><circle cx="855" cy="530" r="6"/><circle cx="910" cy="530" r="6"/><circle cx="965" cy="530" r="6"/><circle cx="1020" cy="530" r="6"/><circle cx="1075" cy="530" r="6"/><circle cx="1130" cy="530" r="6"/><circle cx="1185" cy="530" r="6"/>
+    <circle cx="580" cy="575" r="6"/><circle cx="635" cy="575" r="6"/><circle cx="690" cy="575" r="6"/><circle cx="745" cy="575" r="6"/><circle cx="800" cy="575" r="6"/><circle cx="855" cy="575" r="6"/><circle cx="910" cy="575" r="6"/><circle cx="965" cy="575" r="6"/><circle cx="1020" cy="575" r="6"/><circle cx="1075" cy="575" r="6"/><circle cx="1130" cy="575" r="6"/><circle cx="1185" cy="575" r="6"/>
+    <circle cx="580" cy="620" r="6"/><circle cx="635" cy="620" r="6"/><circle cx="690" cy="620" r="6"/><circle cx="745" cy="620" r="6"/><circle cx="800" cy="620" r="6"/><circle cx="855" cy="620" r="6"/><circle cx="910" cy="620" r="6"/><circle cx="965" cy="620" r="6"/><circle cx="1020" cy="620" r="6"/><circle cx="1075" cy="620" r="6"/><circle cx="1130" cy="620" r="6"/><circle cx="1185" cy="620" r="6"/>
+  </g>
+
+  <!-- 같은 열은 세로로 연결됨을 표시 (3, 7, 10번 열) -->
+  <rect x="678" y="168" width="24" height="204" fill="#cc0000" fill-opacity="0.10" stroke="#cc0000" stroke-width="1.5" stroke-dasharray="4,3" rx="10"/>
+  <rect x="898" y="168" width="24" height="204" fill="#1a7a30" fill-opacity="0.10" stroke="#1a7a30" stroke-width="1.5" stroke-dasharray="4,3" rx="10"/>
+  <rect x="1063" y="168" width="24" height="204" fill="#333333" fill-opacity="0.10" stroke="#333333" stroke-width="1.5" stroke-dasharray="4,3" rx="10"/>
+
+  <!-- 꽂힌 구멍 강조 -->
+  <circle cx="690"  cy="180" r="7" fill="#cc0000"/>
+  <circle cx="1075" cy="180" r="7" fill="#333333"/>
+
+  <!-- ============ 저항 : C3 ↔ C7 ============ -->
+  <line x1="690" y1="270" x2="740" y2="270" stroke="#555555" stroke-width="3.5"/>
+  <line x1="860" y1="270" x2="910" y2="270" stroke="#555555" stroke-width="3.5"/>
+  <rect x="740" y="252" width="120" height="36" fill="#e8d5b0" stroke="#8a6d3b" stroke-width="2.5" rx="5"/>
+  <line x1="762" y1="252" x2="762" y2="288" stroke="#8a2020" stroke-width="6"/>
+  <line x1="782" y1="252" x2="782" y2="288" stroke="#222222" stroke-width="6"/>
+  <line x1="802" y1="252" x2="802" y2="288" stroke="#8a6a20" stroke-width="6"/>
+  <line x1="838" y1="252" x2="838" y2="288" stroke="#b8860b" stroke-width="6"/>
+  <circle cx="690" cy="270" r="7" fill="#8a6d3b"/>
+  <circle cx="910" cy="270" r="7" fill="#8a6d3b"/>
+  <text x="800" y="235" text-anchor="middle" font-size="17" font-weight="bold" fill="#8a6d3b">저항 330Ω</text>
+
+  <!-- ============ LED : E7 ↔ E10 ============ -->
+  <line x1="910" y1="360" x2="945" y2="360" stroke="#555555" stroke-width="3.5"/>
+  <line x1="1000" y1="360" x2="1075" y2="360" stroke="#555555" stroke-width="3.5"/>
+  <polygon points="945,338 945,382 998,360" fill="#d4edda" stroke="#1a7a30" stroke-width="2.5"/>
+  <line x1="998" y1="336" x2="998" y2="384" stroke="#1a7a30" stroke-width="5"/>
+  <circle cx="910" cy="360" r="7" fill="#1a7a30"/>
+  <circle cx="1075" cy="360" r="7" fill="#333333"/>
+  <text x="960" y="410" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a7a30">LED</text>
+
+  <text x="905" y="330" text-anchor="end" font-size="14" fill="#1a7a30">긴 다리 (+)</text>
+  <text x="1082" y="330" font-size="14" fill="#333333">짧은 다리 (-)</text>
+
+  <!-- ============ 하단 설명 ============ -->
+  <rect x="60" y="680" width="620" height="100" fill="#fff3cd" stroke="#cc9900" stroke-width="2" rx="5"/>
+  <text x="78" y="706" font-size="16" font-weight="bold" fill="#7a5c00">⚠ LED 방향 (반대로 꽂으면 안 켜짐)</text>
+  <text x="78" y="731" font-size="14" fill="#7a5c00">긴 다리 = 애노드(+) = 저항 쪽 (7번 열)</text>
+  <text x="78" y="752" font-size="14" fill="#7a5c00">짧은 다리 = 캐소드(-) = GND 쪽 (10번 열)</text>
+  <text x="78" y="773" font-size="14" fill="#7a5c00">몸통 옆면이 평평하게 깎인 쪽이 캐소드(-)</text>
+
+  <rect x="720" y="680" width="620" height="100" fill="#cce5ff" stroke="#004085" stroke-width="2" rx="5"/>
+  <text x="738" y="706" font-size="16" font-weight="bold" fill="#004085">ℹ 저항은 220Ω ~ 1kΩ 아무거나</text>
+  <text x="738" y="731" font-size="14" fill="#004085">220Ω : 밝음   330Ω : 적당   1kΩ : 어둡지만 안전</text>
+  <text x="738" y="752" font-size="14" fill="#004085">저항 없이 직결 금지 → LED 와 GPIO 둘 다 손상</text>
+  <text x="738" y="773" font-size="14" fill="#004085">저항은 방향 없음. 아무 쪽이나 상관없음</text>
+
+</svg>

@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            // cmake 는 PATH 에 있지만 arm-none-eabi-gcc 는 없으므로
+            // 이 태스크에서만 툴체인 경로를 PATH 앞에 붙여준다.
+            "label": "build",
+            "type": "shell",
+            "command": "cmake",
+            "args": ["--build", "--preset", "Debug"],
+            "options": {
+                "cwd": "${workspaceFolder}/nucleo_example",
+                "env": {
+                    "PATH": "C:\\ST\\STM32CubeIDE_2.2.0\\STM32CubeIDE\\plugins\\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740\\tools\\bin;${env:PATH}"
+                }
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

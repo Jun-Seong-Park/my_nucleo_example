@@ -27,7 +27,10 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f1xx_hal.h"
+/* HAL 대신 CMSIS 디바이스 헤더만 사용한다.
+ * stm32f1xx.h 는 RCC/GPIO/ADC/USART 등 모든 주변장치의
+ * 레지스터 구조체와 비트 마스크 정의를 담고 있다. */
+#include "stm32f1xx.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
