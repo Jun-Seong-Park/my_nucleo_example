@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920" font-family="'Courier New', Courier, monospace">
+
+  <rect width="1400" height="920" fill="white"/>
+
+  <text x="700" y="36" text-anchor="middle" font-size="25" font-weight="bold" fill="#111">NUCLEO-F103RB : Arduino 헤더 ↔ STM32 핀 대응표</text>
+  <text x="700" y="62" text-anchor="middle" font-size="14" fill="#666">앞면 실크에 인쇄된 이름(D0~D15, A0~A5)과 실제 MCU 핀</text>
+
+  <!-- ===================== 보드 본체 ===================== -->
+  <rect x="470" y="110" width="460" height="700" fill="#eef4fa" stroke="#004085" stroke-width="3" rx="8"/>
+  <text x="700" y="150" text-anchor="middle" font-size="20" font-weight="bold" fill="#004085">NUCLEO-F103RB</text>
+  <text x="700" y="174" text-anchor="middle" font-size="14" fill="#004085">MB1136</text>
+
+  <!-- USB -->
+  <rect x="630" y="88" width="140" height="26" fill="#cccccc" stroke="#888" stroke-width="2" rx="3"/>
+  <text x="700" y="107" text-anchor="middle" font-size="13" fill="#333">USB (CN1)</text>
+
+  <!-- MCU -->
+  <rect x="620" y="400" width="160" height="160" fill="#333333" stroke="#000" stroke-width="2" rx="4"/>
+  <text x="700" y="470" text-anchor="middle" font-size="14" fill="#ffffff">STM32</text>
+  <text x="700" y="492" text-anchor="middle" font-size="14" fill="#ffffff">F103RBT6</text>
+
+  <!-- 버튼 -->
+  <circle cx="530" cy="215" r="16" fill="#3b7dd8" stroke="#1a4a8a" stroke-width="2"/>
+  <text x="530" y="248" text-anchor="middle" font-size="12" fill="#004085">B1</text>
+  <circle cx="870" cy="215" r="16" fill="#444444" stroke="#000" stroke-width="2"/>
+  <text x="870" y="248" text-anchor="middle" font-size="12" fill="#333">RESET</text>
+
+  <!-- 커넥터 이름 -->
+  <text x="497" y="300" text-anchor="middle" font-size="13" font-weight="bold" fill="#888">CN6</text>
+  <text x="497" y="620" text-anchor="middle" font-size="13" font-weight="bold" fill="#888">CN8</text>
+  <text x="903" y="185" text-anchor="middle" font-size="13" font-weight="bold" fill="#888">CN5</text>
+  <text x="903" y="600" text-anchor="middle" font-size="13" font-weight="bold" fill="#888">CN9</text>
+
+  <!-- ===================== 왼쪽 : CN6 전원 ===================== -->
+  <g font-size="14">
+    <circle cx="470" cy="320" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="455" y="325" text-anchor="end" fill="#888">NC</text>
+
+    <circle cx="470" cy="348" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="455" y="353" text-anchor="end" fill="#888">IOREF</text>
+
+    <circle cx="470" cy="376" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="455" y="381" text-anchor="end" fill="#888">NRST</text>
+
+    <circle cx="470" cy="404" r="7" fill="#cc0000"/>
+    <text x="455" y="409" text-anchor="end" font-weight="bold" fill="#cc0000">3V3  ← 조이스틱 +5V핀</text>
+
+    <circle cx="470" cy="432" r="6" fill="#fff" stroke="#cc9900" stroke-width="2"/>
+    <text x="455" y="437" text-anchor="end" fill="#cc9900">5V   ✕ 쓰지 말 것</text>
+
+    <circle cx="470" cy="460" r="7" fill="#333333"/>
+    <text x="455" y="465" text-anchor="end" font-weight="bold" fill="#333">GND  ← 공통 접지</text>
+
+    <circle cx="470" cy="488" r="7" fill="#333333"/>
+    <text x="455" y="493" text-anchor="end" fill="#333">GND</text>
+
+    <circle cx="470" cy="516" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="455" y="521" text-anchor="end" fill="#888">VIN</text>
+  </g>
+
+  <!-- ===================== 왼쪽 : CN8 아날로그 ===================== -->
+  <g font-size="14">
+    <circle cx="470" cy="640" r="7" fill="#004085"/>
+    <text x="455" y="645" text-anchor="end" font-weight="bold" fill="#004085">A0 = PA0   ← VRx (연결됨)</text>
+
+    <circle cx="470" cy="668" r="7" fill="#004085"/>
+    <text x="455" y="673" text-anchor="end" font-weight="bold" fill="#004085">A1 = PA1   ← VRy (연결됨)</text>
+
+    <circle cx="470" cy="696" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="455" y="701" text-anchor="end" fill="#666">A2 = PA4</text>
+
+    <circle cx="470" cy="724" r="9" fill="#1a7a30"/>
+    <text x="455" y="729" text-anchor="end" font-size="15" font-weight="bold" fill="#1a7a30">A3 = PB0   ★ SW 여기에 꽂으세요</text>
+
+    <circle cx="470" cy="752" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="455" y="757" text-anchor="end" fill="#666">A4 = PC1</text>
+
+    <circle cx="470" cy="780" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="455" y="785" text-anchor="end" fill="#666">A5 = PC0</text>
+  </g>
+
+  <!-- A3 강조 -->
+  <rect x="120" y="708" width="352" height="32" fill="#d4edda" stroke="#1a7a30" stroke-width="2.5" rx="5"/>
+  <text x="296" y="729" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a7a30">A3 = PB0   ★ SW 여기에 꽂으세요</text>
+
+  <!-- ===================== 오른쪽 : CN5 ===================== -->
+  <g font-size="14">
+    <circle cx="930" cy="205" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="948" y="210" fill="#666">D15 = PB8   (SCL)</text>
+
+    <circle cx="930" cy="238" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="948" y="243" fill="#666">D14 = PB9   (SDA)</text>
+
+    <circle cx="930" cy="271" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="948" y="276" fill="#888">AVDD</text>
+
+    <circle cx="930" cy="304" r="7" fill="#333333"/>
+    <text x="948" y="309" fill="#333">GND</text>
+
+    <circle cx="930" cy="337" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="948" y="342" fill="#666">D13 = PA5   (SCK, 온보드 LD2)</text>
+
+    <circle cx="930" cy="370" r="9" fill="#cc6600"/>
+    <text x="948" y="375" font-weight="bold" fill="#cc6600">D12 = PA6   ← 외부 LED (연결됨)</text>
+
+    <circle cx="930" cy="403" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="948" y="408" fill="#666">D11 = PA7   (MOSI)</text>
+
+    <circle cx="930" cy="436" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="948" y="441" fill="#666">D10 = PB6</text>
+
+    <circle cx="930" cy="469" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="948" y="474" fill="#666">D9  = PC7</text>
+
+    <circle cx="930" cy="502" r="9" fill="#6a3d9a"/>
+    <text x="948" y="507" font-weight="bold" fill="#6a3d9a">D8  = PA9   ← UART1 TX (연결됨)</text>
+  </g>
+
+  <!-- ===================== 오른쪽 : CN9 ===================== -->
+  <g font-size="14">
+    <circle cx="930" cy="558" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="948" y="563" fill="#666">D7  = PA8</text>
+
+    <circle cx="930" cy="591" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="948" y="596" fill="#666">D6  = PB10</text>
+
+    <circle cx="930" cy="624" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="948" y="629" fill="#666">D5  = PB4</text>
+
+    <circle cx="930" cy="657" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="948" y="662" fill="#666">D4  = PB5</text>
+
+    <circle cx="930" cy="690" r="6" fill="#fff" stroke="#999" stroke-width="1.5"/>
+    <text x="948" y="695" fill="#666">D3  = PB3</text>
+
+    <circle cx="930" cy="723" r="9" fill="#6a3d9a"/>
+    <text x="948" y="728" font-weight="bold" fill="#6a3d9a">D2  = PA10  ← UART1 RX (연결됨)</text>
+
+    <circle cx="930" cy="756" r="6" fill="#fff" stroke="#cc9900" stroke-width="2"/>
+    <text x="948" y="761" fill="#cc9900">D1  = PA2   (ST-LINK VCP TX)</text>
+
+    <circle cx="930" cy="789" r="6" fill="#fff" stroke="#cc9900" stroke-width="2"/>
+    <text x="948" y="794" fill="#cc9900">D0  = PA3   (ST-LINK VCP RX)</text>
+  </g>
+
+  <!-- ===================== 하단 근거 ===================== -->
+  <rect x="60" y="836" width="1280" height="64" fill="#cce5ff" stroke="#004085" stroke-width="2" rx="5"/>
+  <text x="78" y="860" font-size="14" font-weight="bold" fill="#004085">근거 : STMicroelectronics 공식 Arduino_Core_STM32 / variant_NUCLEO_F103RB.cpp 의 digitalPin[] 배열</text>
+  <text x="78" y="882" font-size="13" fill="#004085">https://raw.githubusercontent.com/stm32duino/Arduino_Core_STM32/main/variants/STM32F1xx/F103R(8-B)T/  (curl HTTP 200, 확인 2026-08-03)</text>
+
+</svg>

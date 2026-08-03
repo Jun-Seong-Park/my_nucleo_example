@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1010" viewBox="0 0 1500 1010" font-family="'Courier New', Courier, monospace">
+
+  <rect width="1500" height="1010" fill="white"/>
+
+  <text x="750" y="36" text-anchor="middle" font-size="25" font-weight="bold" fill="#111">NUCLEO-F103RB 전체 배선도</text>
+  <text x="750" y="60" text-anchor="middle" font-size="14" fill="#666">LED + USB-UART + 조이스틱(VRx/VRy/SW) + 택트 스위치</text>
+
+  <!-- ============ GND 공통 버스 ============ -->
+  <line x1="1310" y1="170" x2="1310" y2="905" stroke="#333333" stroke-width="5"/>
+  <text x="1328" y="166" font-size="14" font-weight="bold" fill="#333">GND 공통</text>
+  <text x="1328" y="186" font-size="12" fill="#666">빵판 한 열에</text>
+  <text x="1328" y="202" font-size="12" fill="#666">전부 모으면 됨</text>
+
+  <!-- ============ Nucleo 보드 ============ -->
+  <rect x="80" y="110" width="330" height="790" fill="#cce5ff" stroke="#004085" stroke-width="3" rx="8"/>
+  <text x="245" y="146" text-anchor="middle" font-size="19" font-weight="bold" fill="#004085">NUCLEO-F103RB</text>
+  <text x="245" y="168" text-anchor="middle" font-size="13" fill="#004085">앞면 Arduino 헤더 기준</text>
+
+  <g font-size="15">
+    <circle cx="410" cy="220" r="7" fill="#cc6600"/>
+    <text x="395" y="225" text-anchor="end" font-weight="bold" fill="#cc6600">D12 (PA6)</text>
+
+    <circle cx="410" cy="305" r="7" fill="#6a3d9a"/>
+    <text x="395" y="310" text-anchor="end" font-weight="bold" fill="#6a3d9a">D8  (PA9)</text>
+
+    <circle cx="410" cy="350" r="7" fill="#6a3d9a"/>
+    <text x="395" y="355" text-anchor="end" font-weight="bold" fill="#6a3d9a">D2  (PA10)</text>
+
+    <circle cx="410" cy="460" r="7" fill="#004085"/>
+    <text x="395" y="465" text-anchor="end" font-weight="bold" fill="#004085">A0  (PA0)</text>
+
+    <circle cx="410" cy="500" r="7" fill="#004085"/>
+    <text x="395" y="505" text-anchor="end" font-weight="bold" fill="#004085">A1  (PA1)</text>
+
+    <circle cx="410" cy="540" r="9" fill="#b8860b"/>
+    <text x="395" y="545" text-anchor="end" font-size="16" font-weight="bold" fill="#b8860b">A2  (PA4)</text>
+
+    <circle cx="410" cy="600" r="7" fill="#cc0000"/>
+    <text x="395" y="605" text-anchor="end" font-weight="bold" fill="#cc0000">3V3</text>
+
+    <circle cx="410" cy="730" r="9" fill="#1a7a30"/>
+    <text x="395" y="735" text-anchor="end" font-size="16" font-weight="bold" fill="#1a7a30">A3  (PB0)</text>
+
+    <circle cx="410" cy="860" r="7" fill="#333333"/>
+    <text x="395" y="865" text-anchor="end" font-weight="bold" fill="#333">GND</text>
+  </g>
+
+  <!-- ============ ① LED ============ -->
+  <rect x="590" y="175" width="430" height="95" fill="#fff8f0" stroke="#cc6600" stroke-width="2.5" rx="6"/>
+  <text x="606" y="199" font-size="15" font-weight="bold" fill="#cc6600">① LED</text>
+
+  <line x1="410" y1="220" x2="590" y2="220" stroke="#cc6600" stroke-width="3.5"/>
+  <line x1="620" y1="238" x2="668" y2="238" stroke="#555" stroke-width="3"/>
+  <rect x="668" y="223" width="88" height="30" fill="#e8d5b0" stroke="#8a6d3b" stroke-width="2" rx="4"/>
+  <text x="712" y="244" text-anchor="middle" font-size="13" fill="#8a6d3b">330Ω</text>
+  <line x1="756" y1="238" x2="806" y2="238" stroke="#555" stroke-width="3"/>
+  <polygon points="806,224 806,252 846,238" fill="#d4edda" stroke="#1a7a30" stroke-width="2.5"/>
+  <line x1="846" y1="222" x2="846" y2="254" stroke="#1a7a30" stroke-width="4"/>
+  <line x1="846" y1="238" x2="1310" y2="238" stroke="#333333" stroke-width="3"/>
+  <text x="806" y="216" text-anchor="end" font-size="12" fill="#1a7a30">긴다리(+)</text>
+  <text x="854" y="216" font-size="12" fill="#333">짧은다리(−)</text>
+
+  <!-- ============ ② USB-UART ============ -->
+  <rect x="590" y="285" width="430" height="115" fill="#f8f4ff" stroke="#6a3d9a" stroke-width="2.5" rx="6"/>
+  <text x="606" y="308" font-size="15" font-weight="bold" fill="#6a3d9a">② USB-UART 어댑터 (3.3V 모드)</text>
+
+  <line x1="410" y1="305" x2="590" y2="305" stroke="#6a3d9a" stroke-width="3.5"/>
+  <text x="606" y="334" font-size="14" fill="#6a3d9a">RX  ← 보드 TX (PA9)</text>
+
+  <line x1="410" y1="350" x2="555" y2="350" stroke="#6a3d9a" stroke-width="3.5"/>
+  <line x1="555" y1="350" x2="555" y2="358" stroke="#6a3d9a" stroke-width="3.5"/>
+  <line x1="555" y1="358" x2="590" y2="358" stroke="#6a3d9a" stroke-width="3.5"/>
+  <text x="606" y="358" font-size="14" fill="#6a3d9a">TX  → 보드 RX (PA10)</text>
+
+  <text x="606" y="382" font-size="14" fill="#333">GND ────────────────→</text>
+  <line x1="880" y1="378" x2="1310" y2="378" stroke="#333333" stroke-width="3"/>
+  <text x="820" y="398" font-size="12" fill="#cc0000">VCC 는 연결하지 마세요</text>
+
+  <!-- ============ ③ 조이스틱 ============ -->
+  <rect x="590" y="415" width="430" height="215" fill="#f0f6ff" stroke="#004085" stroke-width="2.5" rx="6"/>
+  <text x="606" y="438" font-size="15" font-weight="bold" fill="#004085">③ 조이스틱 모듈 (KY-023)</text>
+
+  <line x1="410" y1="460" x2="590" y2="460" stroke="#004085" stroke-width="3.5"/>
+  <text x="606" y="466" font-size="14" fill="#004085">VRx ← A0 (PA0)   ADC1_IN0</text>
+
+  <line x1="410" y1="500" x2="590" y2="500" stroke="#004085" stroke-width="3.5"/>
+  <text x="606" y="506" font-size="14" fill="#004085">VRy ← A1 (PA1)   ADC1_IN1</text>
+
+  <line x1="410" y1="540" x2="590" y2="540" stroke="#b8860b" stroke-width="4"/>
+  <text x="606" y="546" font-size="14" font-weight="bold" fill="#b8860b">SW  ← A2 (PA4)   눌림 상태만 표시</text>
+
+  <line x1="410" y1="600" x2="555" y2="600" stroke="#cc0000" stroke-width="3.5"/>
+  <line x1="555" y1="600" x2="555" y2="578" stroke="#cc0000" stroke-width="3.5"/>
+  <line x1="555" y1="578" x2="590" y2="578" stroke="#cc0000" stroke-width="3.5"/>
+  <text x="606" y="584" font-size="14" font-weight="bold" fill="#cc0000">+5V 핀 ← 보드 3V3 (5V 아님)</text>
+
+  <text x="606" y="614" font-size="14" fill="#333">GND ────────────────→</text>
+  <line x1="880" y1="610" x2="1310" y2="610" stroke="#333333" stroke-width="3"/>
+
+  <!-- ============ ④ 택트 스위치 ============ -->
+  <rect x="590" y="655" width="430" height="215" fill="#f2fbf4" stroke="#1a7a30" stroke-width="2.5" rx="6"/>
+  <text x="606" y="678" font-size="15" font-weight="bold" fill="#1a7a30">④ 택트 스위치 (4핀) — 저항 불필요</text>
+
+  <line x1="410" y1="730" x2="700" y2="730" stroke="#1a7a30" stroke-width="4"/>
+  <text x="606" y="722" font-size="14" font-weight="bold" fill="#1a7a30">A3 (PB0)  EXTI0</text>
+
+  <rect x="700" y="745" width="145" height="95" fill="#ffffff" stroke="#1a7a30" stroke-width="3" rx="5"/>
+  <circle cx="772" cy="792" r="22" fill="#d4edda" stroke="#1a7a30" stroke-width="3"/>
+  <circle cx="712" cy="757" r="7" fill="#1a7a30"/>
+  <circle cx="833" cy="757" r="6" fill="#bbb"/>
+  <circle cx="712" cy="828" r="6" fill="#bbb"/>
+  <circle cx="833" cy="828" r="7" fill="#333333"/>
+
+  <line x1="700" y1="730" x2="712" y2="730" stroke="#1a7a30" stroke-width="4"/>
+  <line x1="712" y1="730" x2="712" y2="757" stroke="#1a7a30" stroke-width="4"/>
+  <line x1="833" y1="828" x2="1310" y2="828" stroke="#333333" stroke-width="3"/>
+  <text x="851" y="832" font-size="13" fill="#333">→ GND</text>
+
+  <text x="606" y="862" font-size="13" fill="#1a7a30">마주보는 대각선 두 핀을 쓰면 방향과 무관하게 항상 맞습니다</text>
+
+  <!-- ============ 하단 설명 ============ -->
+  <rect x="80" y="915" width="1360" height="80" fill="#fff3cd" stroke="#cc9900" stroke-width="2" rx="5"/>
+  <text x="98" y="939" font-size="14" font-weight="bold" fill="#7a5c00">⚠ 역할이 다릅니다 — LED 를 제어하는 것은 택트 스위치 하나뿐입니다</text>
+  <text x="98" y="962" font-size="13" fill="#7a5c00">택트 A3(PB0) : EXTI0 인터럽트, 누르고 있는 동안 blink 정지     조이스틱(VRx/VRy/SW) : 시리얼 표시 전용, 아무것도 제어하지 않음</text>
+  <text x="98" y="983" font-size="13" fill="#7a5c00">스위치 두 개 모두 저항 없이 GND 로만 떨어뜨립니다. 내부 풀업을 켜뒀습니다 (평소 HIGH, 누르면 LOW).</text>
+
+</svg>

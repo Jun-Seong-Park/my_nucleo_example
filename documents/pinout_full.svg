@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="1010" viewBox="0 0 1720 1010" font-family="'Courier New', Courier, monospace">
+
+  <rect width="1720" height="1010" fill="white"/>
+
+  <text x="860" y="32" text-anchor="middle" font-size="23" font-weight="bold" fill="#111">NUCLEO-F103RB 핀아웃 (UM1724 Figure 12 그대로)</text>
+  <text x="860" y="54" text-anchor="middle" font-size="13" fill="#666">파랑 = 모포 커넥터 CN7 / CN10      분홍 = Arduino 커넥터 CN5 / CN6 / CN8 / CN9</text>
+
+  <!-- ================= 보드 ================= -->
+  <rect x="700" y="90" width="320" height="840" fill="#e9eef4" stroke="#666" stroke-width="2" rx="6"/>
+  <text x="860" y="130" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">NUCLEO-F103RB</text>
+  <text x="860" y="154" text-anchor="middle" font-size="13" fill="#666">MB1136</text>
+  <rect x="800" y="440" width="120" height="120" fill="#333" rx="4"/>
+  <text x="860" y="495" text-anchor="middle" font-size="12" fill="#fff">STM32</text>
+  <text x="860" y="515" text-anchor="middle" font-size="12" fill="#fff">F103RBT6</text>
+
+  <!-- ================= CN7 (왼쪽 모포) ================= -->
+  <text x="330" y="176" text-anchor="middle" font-size="15" font-weight="bold" fill="#0000cc">CN7</text>
+  <text x="600" y="176" text-anchor="middle" font-size="15" font-weight="bold" fill="#cc00aa">CN6 / CN8</text>
+
+  <g font-size="14">
+    <!-- 홀수(바깥) 신호 -->
+    <g text-anchor="end" fill="#0000cc">
+      <text x="272" y="205">PC10</text><text x="272" y="243">PC12</text>
+      <text x="272" y="281">VDD</text><text x="272" y="319">BOOT0</text>
+      <text x="272" y="357">NC</text><text x="272" y="395">NC</text>
+      <text x="272" y="433">PA13</text><text x="272" y="471">PA14</text>
+      <text x="272" y="509">PA15</text><text x="272" y="547">GND</text>
+      <text x="272" y="585">PB7</text><text x="272" y="623">PC13</text>
+      <text x="272" y="661">PC14</text><text x="272" y="699">PC15</text>
+      <text x="272" y="737">PD0</text><text x="272" y="775">PD1</text>
+      <text x="272" y="813">VBAT</text><text x="272" y="851">PC2</text>
+      <text x="272" y="889">PC3</text>
+    </g>
+
+    <!-- 핀 번호 박스 -->
+    <g font-size="12" text-anchor="middle">
+      <g fill="#ffffff">
+        <rect x="288" y="192" width="42" height="20" fill="#0000cc"/><text x="309" y="207">1</text>
+        <rect x="288" y="230" width="42" height="20" fill="#0000cc"/><text x="309" y="245">3</text>
+        <rect x="288" y="268" width="42" height="20" fill="#0000cc"/><text x="309" y="283">5</text>
+        <rect x="288" y="306" width="42" height="20" fill="#0000cc"/><text x="309" y="321">7</text>
+        <rect x="288" y="344" width="42" height="20" fill="#0000cc"/><text x="309" y="359">9</text>
+        <rect x="288" y="382" width="42" height="20" fill="#0000cc"/><text x="309" y="397">11</text>
+        <rect x="288" y="420" width="42" height="20" fill="#0000cc"/><text x="309" y="435">13</text>
+        <rect x="288" y="458" width="42" height="20" fill="#0000cc"/><text x="309" y="473">15</text>
+        <rect x="288" y="496" width="42" height="20" fill="#0000cc"/><text x="309" y="511">17</text>
+        <rect x="288" y="534" width="42" height="20" fill="#0000cc"/><text x="309" y="549">19</text>
+        <rect x="288" y="572" width="42" height="20" fill="#0000cc"/><text x="309" y="587">21</text>
+        <rect x="288" y="610" width="42" height="20" fill="#0000cc"/><text x="309" y="625">23</text>
+        <rect x="288" y="648" width="42" height="20" fill="#0000cc"/><text x="309" y="663">25</text>
+        <rect x="288" y="686" width="42" height="20" fill="#0000cc"/><text x="309" y="701">27</text>
+        <rect x="288" y="724" width="42" height="20" fill="#0000cc"/><text x="309" y="739">29</text>
+        <rect x="288" y="762" width="42" height="20" fill="#0000cc"/><text x="309" y="777">31</text>
+        <rect x="288" y="800" width="42" height="20" fill="#0000cc"/><text x="309" y="815">33</text>
+        <rect x="288" y="838" width="42" height="20" fill="#0000cc"/><text x="309" y="853">35</text>
+        <rect x="288" y="876" width="42" height="20" fill="#0000cc"/><text x="309" y="891">37</text>
+
+        <rect x="332" y="192" width="42" height="20" fill="#0000cc"/><text x="353" y="207">2</text>
+        <rect x="332" y="230" width="42" height="20" fill="#0000cc"/><text x="353" y="245">4</text>
+        <rect x="332" y="268" width="42" height="20" fill="#0000cc"/><text x="353" y="283">6</text>
+        <rect x="332" y="306" width="42" height="20" fill="#0000cc"/><text x="353" y="321">8</text>
+        <rect x="332" y="344" width="42" height="20" fill="#0000cc"/><text x="353" y="359">10</text>
+        <rect x="332" y="382" width="42" height="20" fill="#0000cc"/><text x="353" y="397">12</text>
+        <rect x="332" y="420" width="42" height="20" fill="#0000cc"/><text x="353" y="435">14</text>
+        <rect x="332" y="458" width="42" height="20" fill="#0000cc"/><text x="353" y="473">16</text>
+        <rect x="332" y="496" width="42" height="20" fill="#0000cc"/><text x="353" y="511">18</text>
+        <rect x="332" y="534" width="42" height="20" fill="#0000cc"/><text x="353" y="549">20</text>
+        <rect x="332" y="572" width="42" height="20" fill="#0000cc"/><text x="353" y="587">22</text>
+        <rect x="332" y="610" width="42" height="20" fill="#0000cc"/><text x="353" y="625">24</text>
+        <rect x="332" y="648" width="42" height="20" fill="#0000cc"/><text x="353" y="663">26</text>
+        <rect x="332" y="686" width="42" height="20" fill="#0000cc"/><text x="353" y="701">28</text>
+        <rect x="332" y="724" width="42" height="20" fill="#0000cc"/><text x="353" y="739">30</text>
+        <rect x="332" y="762" width="42" height="20" fill="#0000cc"/><text x="353" y="777">32</text>
+        <rect x="332" y="800" width="42" height="20" fill="#1a7a30"/><text x="353" y="815">34</text>
+        <rect x="332" y="838" width="42" height="20" fill="#0000cc"/><text x="353" y="853">36</text>
+        <rect x="332" y="876" width="42" height="20" fill="#0000cc"/><text x="353" y="891">38</text>
+      </g>
+    </g>
+
+    <!-- 짝수(안쪽) 신호 -->
+    <g fill="#0000cc">
+      <text x="390" y="205">PC11</text><text x="390" y="243">PD2</text>
+      <text x="390" y="281">E5V</text><text x="390" y="319">GND</text>
+      <text x="390" y="357">NC</text><text x="390" y="395">IOREF</text>
+      <text x="390" y="433">RESET</text><text x="390" y="471">+3V3</text>
+      <text x="390" y="509">+5V</text><text x="390" y="547">GND</text>
+      <text x="390" y="585">GND</text><text x="390" y="623">VIN</text>
+      <text x="390" y="661">NC</text><text x="390" y="699">PA0</text>
+      <text x="390" y="737">PA1</text><text x="390" y="775">PA4</text>
+      <text x="390" y="851">PC1</text><text x="390" y="889">PC0</text>
+    </g>
+    <text x="390" y="813" font-size="15" font-weight="bold" fill="#1a7a30">PB0</text>
+
+    <!-- Arduino 라벨 (CN6 / CN8) -->
+    <g fill="#cc00aa">
+      <text x="530" y="357">NC</text><text x="530" y="395">IOREF</text>
+      <text x="530" y="433">RESET</text><text x="530" y="471">+3V3</text>
+      <text x="530" y="509">+5V</text><text x="530" y="547">GND</text>
+      <text x="530" y="585">GND</text><text x="530" y="623">VIN</text>
+      <text x="530" y="699">A0</text><text x="530" y="737">A1</text>
+      <text x="530" y="775">A2</text>
+      <text x="530" y="851">A4</text><text x="530" y="889">A5</text>
+    </g>
+    <text x="530" y="813" font-size="16" font-weight="bold" fill="#1a7a30">A3</text>
+  </g>
+
+  <!-- PB0 강조 -->
+  <rect x="286" y="798" width="290" height="26" fill="none" stroke="#1a7a30" stroke-width="4" rx="6"/>
+  <rect x="40" y="796" width="230" height="32" fill="#1a7a30" rx="7"/>
+  <text x="155" y="819" text-anchor="middle" font-size="15" font-weight="bold" fill="white">택트 스위치는 여기</text>
+
+  <!-- ================= CN10 (오른쪽 모포) ================= -->
+  <text x="1130" y="176" text-anchor="middle" font-size="15" font-weight="bold" fill="#cc00aa">CN5 / CN9</text>
+  <text x="1390" y="176" text-anchor="middle" font-size="15" font-weight="bold" fill="#0000cc">CN10</text>
+
+  <g font-size="14">
+    <!-- Arduino 라벨 -->
+    <g text-anchor="end" fill="#cc00aa">
+      <text x="1130" y="243">D15</text><text x="1130" y="281">D14</text>
+      <text x="1130" y="319">AVDD</text><text x="1130" y="357">GND</text>
+      <text x="1130" y="395">D13</text><text x="1130" y="433">D12</text>
+      <text x="1130" y="471">D11</text><text x="1130" y="509">D10</text>
+      <text x="1130" y="547">D9</text><text x="1130" y="585">D8</text>
+      <text x="1130" y="623">D7</text><text x="1130" y="661">D6</text>
+      <text x="1130" y="699">D5</text><text x="1130" y="737">D4</text>
+      <text x="1130" y="775">D3</text><text x="1130" y="813">D2</text>
+      <text x="1130" y="851">D1</text><text x="1130" y="889">D0</text>
+    </g>
+
+    <!-- 홀수(안쪽) 신호 -->
+    <g text-anchor="end" fill="#0000cc">
+      <text x="1272" y="205">PC9</text><text x="1272" y="243">PB8</text>
+      <text x="1272" y="281">PB9</text><text x="1272" y="319">AVDD</text>
+      <text x="1272" y="357">GND</text><text x="1272" y="395">PA5</text>
+      <text x="1272" y="433">PA6</text><text x="1272" y="471">PA7</text>
+      <text x="1272" y="509">PB6</text><text x="1272" y="547">PC7</text>
+      <text x="1272" y="585">PA9</text><text x="1272" y="623">PA8</text>
+      <text x="1272" y="661">PB10</text><text x="1272" y="699">PB4</text>
+      <text x="1272" y="737">PB5</text><text x="1272" y="775">PB3</text>
+      <text x="1272" y="813">PA10</text><text x="1272" y="851">PA2</text>
+      <text x="1272" y="889">PA3</text>
+    </g>
+
+    <!-- 핀 번호 -->
+    <g font-size="12" text-anchor="middle" fill="#ffffff">
+      <rect x="1288" y="192" width="42" height="20" fill="#0000cc"/><text x="1309" y="207">1</text>
+      <rect x="1288" y="230" width="42" height="20" fill="#0000cc"/><text x="1309" y="245">3</text>
+      <rect x="1288" y="268" width="42" height="20" fill="#0000cc"/><text x="1309" y="283">5</text>
+      <rect x="1288" y="306" width="42" height="20" fill="#0000cc"/><text x="1309" y="321">7</text>
+      <rect x="1288" y="344" width="42" height="20" fill="#0000cc"/><text x="1309" y="359">9</text>
+      <rect x="1288" y="382" width="42" height="20" fill="#0000cc"/><text x="1309" y="397">11</text>
+      <rect x="1288" y="420" width="42" height="20" fill="#0000cc"/><text x="1309" y="435">13</text>
+      <rect x="1288" y="458" width="42" height="20" fill="#0000cc"/><text x="1309" y="473">15</text>
+      <rect x="1288" y="496" width="42" height="20" fill="#0000cc"/><text x="1309" y="511">17</text>
+      <rect x="1288" y="534" width="42" height="20" fill="#0000cc"/><text x="1309" y="549">19</text>
+      <rect x="1288" y="572" width="42" height="20" fill="#0000cc"/><text x="1309" y="587">21</text>
+      <rect x="1288" y="610" width="42" height="20" fill="#0000cc"/><text x="1309" y="625">23</text>
+      <rect x="1288" y="648" width="42" height="20" fill="#0000cc"/><text x="1309" y="663">25</text>
+      <rect x="1288" y="686" width="42" height="20" fill="#0000cc"/><text x="1309" y="701">27</text>
+      <rect x="1288" y="724" width="42" height="20" fill="#0000cc"/><text x="1309" y="739">29</text>
+      <rect x="1288" y="762" width="42" height="20" fill="#0000cc"/><text x="1309" y="777">31</text>
+      <rect x="1288" y="800" width="42" height="20" fill="#0000cc"/><text x="1309" y="815">33</text>
+      <rect x="1288" y="838" width="42" height="20" fill="#0000cc"/><text x="1309" y="853">35</text>
+      <rect x="1288" y="876" width="42" height="20" fill="#0000cc"/><text x="1309" y="891">37</text>
+
+      <rect x="1332" y="192" width="42" height="20" fill="#0000cc"/><text x="1353" y="207">2</text>
+      <rect x="1332" y="230" width="42" height="20" fill="#0000cc"/><text x="1353" y="245">4</text>
+      <rect x="1332" y="268" width="42" height="20" fill="#0000cc"/><text x="1353" y="283">6</text>
+      <rect x="1332" y="306" width="42" height="20" fill="#0000cc"/><text x="1353" y="321">8</text>
+      <rect x="1332" y="344" width="42" height="20" fill="#0000cc"/><text x="1353" y="359">10</text>
+      <rect x="1332" y="382" width="42" height="20" fill="#0000cc"/><text x="1353" y="397">12</text>
+      <rect x="1332" y="420" width="42" height="20" fill="#0000cc"/><text x="1353" y="435">14</text>
+      <rect x="1332" y="458" width="42" height="20" fill="#0000cc"/><text x="1353" y="473">16</text>
+      <rect x="1332" y="496" width="42" height="20" fill="#0000cc"/><text x="1353" y="511">18</text>
+      <rect x="1332" y="534" width="42" height="20" fill="#0000cc"/><text x="1353" y="549">20</text>
+      <rect x="1332" y="572" width="42" height="20" fill="#0000cc"/><text x="1353" y="587">22</text>
+      <rect x="1332" y="610" width="42" height="20" fill="#0000cc"/><text x="1353" y="625">24</text>
+      <rect x="1332" y="648" width="42" height="20" fill="#0000cc"/><text x="1353" y="663">26</text>
+      <rect x="1332" y="686" width="42" height="20" fill="#0000cc"/><text x="1353" y="701">28</text>
+      <rect x="1332" y="724" width="42" height="20" fill="#0000cc"/><text x="1353" y="739">30</text>
+      <rect x="1332" y="762" width="42" height="20" fill="#0000cc"/><text x="1353" y="777">32</text>
+      <rect x="1332" y="800" width="42" height="20" fill="#cc0000"/><text x="1353" y="815">34</text>
+      <rect x="1332" y="838" width="42" height="20" fill="#0000cc"/><text x="1353" y="853">36</text>
+      <rect x="1332" y="876" width="42" height="20" fill="#0000cc"/><text x="1353" y="891">38</text>
+    </g>
+
+    <!-- 짝수(바깥) 신호 -->
+    <g fill="#0000cc">
+      <text x="1390" y="205">PC8</text><text x="1390" y="243">PC6</text>
+      <text x="1390" y="281">PC5</text><text x="1390" y="319">U5V</text>
+      <text x="1390" y="357">NC</text><text x="1390" y="395">PA12</text>
+      <text x="1390" y="433">PA11</text><text x="1390" y="471">PB12</text>
+      <text x="1390" y="509">PB11</text><text x="1390" y="547">GND</text>
+      <text x="1390" y="585">PB2</text><text x="1390" y="623">PB1</text>
+      <text x="1390" y="661">PB15</text><text x="1390" y="699">PB14</text>
+      <text x="1390" y="737">PB13</text><text x="1390" y="775">AGND</text>
+      <text x="1390" y="851">NC</text><text x="1390" y="889">NC</text>
+    </g>
+    <text x="1390" y="813" font-size="15" font-weight="bold" fill="#cc0000">PC4</text>
+  </g>
+
+  <rect x="1330" y="798" width="130" height="26" fill="none" stroke="#cc0000" stroke-width="4" rx="6"/>
+  <rect x="1480" y="796" width="215" height="32" fill="#cc0000" rx="7"/>
+  <text x="1587" y="819" text-anchor="middle" font-size="14" font-weight="bold" fill="white">여기 꽂혀 있음 (X)</text>
+
+  <!-- ================= 하단 ================= -->
+  <rect x="40" y="932" width="1640" height="62" fill="#cce5ff" stroke="#004085" stroke-width="2" rx="5"/>
+  <text x="58" y="954" font-size="14" font-weight="bold" fill="#004085">PB0 은 CN10 에 아예 없습니다. CN7 34번 (또는 앞면 Arduino CN8 의 A3) 이 유일한 자리입니다.</text>
+  <text x="58" y="978" font-size="12" fill="#004085">근거 : UM1724 Rev 9 "Figure 12. NUCLEO-F103RB", p.28 — farnell.com/datasheets/1955466.pdf (curl HTTP 200, 2026-08-04)</text>
+
+</svg>

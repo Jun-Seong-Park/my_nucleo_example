@@ -16,9 +16,10 @@
 
             // F5 를 누르면 먼저 빌드한다 (tasks.json 의 "build")
             "preLaunchTask": "build",
+            //"breakAfterReset": true,
 
             // main() 진입 시점에서 자동으로 멈춘다
-            "runToEntryPoint": "main",
+             "runToEntryPoint": "main",
 
             // 레지스터를 이름·비트 단위로 보여주는 정의 파일.
             // 이게 있어야 GPIOA->CRL, RCC->APB2ENR 을 비트별로 관측할 수 있다.
